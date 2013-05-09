@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FacebookList.h"
+#import "GAI.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : GAITrackedViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) FacebookList *detailItem;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end
